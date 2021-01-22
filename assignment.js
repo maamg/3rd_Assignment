@@ -49,14 +49,14 @@ function hotelCost( Days ) {
         return cost;
     }
 }
-console.log( hotelCost(20) );
+console.log( hotelCost(20) );           //will print toal hotel cost for these days
 
 
 // //4th problem solving:
 
 function megaFriend( namesArray ) {
     var max = 0;                                   //To diposit the larger element of the namesArray
-    for( i=0;i<namesArray.length;i++ ) {
+    for( i=0; i<namesArray.length; i++ ) {
         var tem = namesArray[i].length;           // sequentially element's length
          if( tem > max ){                         //comparing element's length
             max = tem;                            //if length is larger, assign to max
