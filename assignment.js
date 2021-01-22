@@ -1,4 +1,8 @@
 // gitlink: https://github.com/maamg/3rd_Assignment
+
+
+// // 1st problem solving: 
+
 function kilometerToMeter( kilometer ) {
     if( kilometer < 0 ) {
         return "distance can not be negative!";
@@ -10,7 +14,8 @@ function kilometerToMeter( kilometer ) {
 }
 console.log( kilometerToMeter(3.021) ); //output: 3021
 
-// // 2nd Project 
+
+// // 2nd Problem solving: 
 
 function budgetCalculator( watchQity, mobileQity, laptopQity ) {
    if(watchQity < 0 || mobileQity < 0 || laptopQity < 0 ){       //if any of any the item's qity assigned neg(-), it wil warn! 
@@ -24,7 +29,7 @@ function budgetCalculator( watchQity, mobileQity, laptopQity ) {
 console.log( budgetCalculator(3,2,1) );                   // Quantity of watch,mobile and laptop sequentially 
 
 
-// // 3rd problem solving 
+// // 3rd problem solving: 
 
 function hotelCost( Days ) {
     var cost;
@@ -46,8 +51,8 @@ function hotelCost( Days ) {
 }
 console.log( hotelCost(20) );
 
-// //4th problem solving
 
+// //4th problem solving:
 
 function megaFriend( namesArray ) {
     var max = 0;                                   //To diposit the larger element of the namesArray
