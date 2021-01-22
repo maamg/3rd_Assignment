@@ -1,19 +1,19 @@
 // gitlink: https://github.com/maamg/3rd_Assignment
-function kilometerToMeter(kilometer) {
-    if(kilometer<0) {
+function kilometerToMeter( kilometer ) {
+    if( kilometer < 0 ) {
         return "distance can not be negative!";
     }
     else{
-        var meter=kilometer*1000;               // 1 kilometer=1000 meter
+        var meter = kilometer*1000;               // 1 kilometer=1000 meter
         return meter;                           //will return the value in meter unit
     } 
 }
-console.log(kilometerToMeter(3.021)); //output: 3021
+console.log( kilometerToMeter(3.021) ); //output: 3021
 
 // // 2nd Project 
 
-function budgetCalculator(watchQity,mobileQity,laptopQity) {
-   if(watchQity <0 || mobileQity <0 || laptopQity <0 ){       //if any of any the item's qity assigned neg(-), it wil warn! 
+function budgetCalculator( watchQity, mobileQity, laptopQity ) {
+   if(watchQity < 0 || mobileQity < 0 || laptopQity < 0 ){       //if any of any the item's qity assigned neg(-), it wil warn! 
        return 'Quantity can not be negative !!'
    }
    else{
@@ -26,16 +26,16 @@ console.log( budgetCalculator(3,2,1) );                   // Quantity of watch,m
 
 // // 3rd problem solving 
 
-function hotelCost(Days) {
+function hotelCost( Days ) {
     var cost;
-    if(Days<0) {
+    if( Days < 0 ) {
         return 'Negative value is not acceptable !!!'
     }
     else {
-        if(Days <= 10){                            //for first 10 days
+        if( Days <= 10 ){                            //for first 10 days
             cost = Days*100;
         }
-        else if(Days > 10 && Days <= 20) {         //for first 20 days
+        else if( Days > 10 && Days <= 20 ) {         //for first 20 days
             cost = 100*10 + (Days-10)*80;          //or, 1000+(Days-10)*80;
         }
         else{                                      //for more than 20 days
@@ -49,13 +49,13 @@ console.log( hotelCost(20) );
 // //4th problem solving
 
 
-function megaFriend(namesArray) {
-    var max=0;
-    for(i=0;i<namesArray.length;i++) {
-        var tem= namesArray[i].length;          // sequentially element's length
-         if(tem>max){                           //comparing element's length
-            max=tem;                            //if length is larger, assign to max
-            var largeName=namesArray[i];        // largeName=the larger element of that[i] array
+function megaFriend( namesArray ) {
+    var max = 0;                                   //To diposit the larger element of the namesArray
+    for( i=0;i<namesArray.length;i++ ) {
+        var tem = namesArray[i].length;           // sequentially element's length
+         if( tem > max ){                         //comparing element's length
+            max = tem;                            //if length is larger, assign to max
+            var largeName = namesArray[i];        // largeName=the larger element of that[i] array
         }
     }
     return largeName;                           //return the largest string from the array(namesArray) 
