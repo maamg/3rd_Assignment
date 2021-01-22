@@ -1,10 +1,11 @@
+// gitlink: https://github.com/maamg/3rd_Assignment
 function kilometerToMeter(kilometer) {
     if(kilometer<0) {
         return "distance can not be negative!";
     }
     else{
-        var meter=kilometer*1000;
-        return meter; 
+        var meter=kilometer*1000;               // 1 kilometer=1000 meter
+        return meter;                           //will return the value in meter unit
     } 
 }
 console.log(kilometerToMeter(3.021)); //output: 3021
@@ -13,7 +14,7 @@ console.log(kilometerToMeter(3.021)); //output: 3021
 
 function budgetCalculator(watchQity,mobileQity,laptopQity) {
    if(watchQity <0 || mobileQity <0 || laptopQity <0 ){       //if any of any the item's qity assigned neg(-), it wil warn! 
-       return 'Quantity can not be negative!'
+       return 'Quantity can not be negative !!'
    }
    else{
     budget = watchQity*50 + mobileQity*100 + laptopQity*500;
@@ -28,7 +29,7 @@ console.log( budgetCalculator(3,2,1) );                   // Quantity of watch,m
 function hotelCost(Days) {
     var cost;
     if(Days<0) {
-        return 'Negative value is not acceptable !!'
+        return 'Negative value is not acceptable !!!'
     }
     else {
         if(Days <= 10){                            //for first 10 days
@@ -59,5 +60,5 @@ function megaFriend(namesArray) {
     }
     return largeName;                           //return the largest string from the array(namesArray) 
 }
-var friendList=['Saju','Roich','Shohag','Imran','Ashraful','Adib','Mohaiminul'];
+var friendList=['Saju','Roich','Shohag','Imran','Mohaiminul','Ashraful','Adib'];
 console.log(megaFriend(friendList));            //will print the largest string(name) from friendList
