@@ -60,4 +60,4 @@ function megaFriend(namesArray) {
     return largeName;                           //return the largest string from the array(namesArray) 
 }
 var friendList=['Saju','Roich','Shohag','Imran','Ashraful','Adib','Mohaiminul'];
-console.log(megaFriend(friendList));            //will print the larger string(name) from friendList
+console.log(megaFriend(friendList));            //will print the largest string(name) from friendList
